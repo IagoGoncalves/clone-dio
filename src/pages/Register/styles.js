@@ -20,14 +20,6 @@ export const Column = styled.div`
     flex: 1;
 `
 
-export const Row = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-`
-
 export const Title = styled.h2`
     font-family: 'Open Sans';
     font-style: normal;
@@ -56,20 +48,39 @@ export const SubTitleLogin = styled.p`
     line-height: 25px;
 `
 
-export const EsqueciText = styled.p`
+export const InfoText = styled.p`
     font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 19px;
-    color: #e5e044;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    margin-top: 40px;
 `
 
-export const CriarText = styled.p`
+export const Row = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+`
+
+export const AccountExists = styled.p`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
-    color: #E23dd7;
+    color: #fff;
+`
+
+export const ToLogin = styled.a`
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #23dd7a;
+    text-decoration: none;
 `

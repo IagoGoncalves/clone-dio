@@ -65,11 +65,12 @@ export const EsqueciText = styled.p`
     color: #e5e044;
 `
 
-export const CriarText = styled.p`
+export const CriarText = styled.a`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
     color: #E23dd7;
+    text-decoration: none;
 `

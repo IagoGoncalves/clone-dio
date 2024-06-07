@@ -3,7 +3,7 @@ import { MdEmail, MdLock } from "react-icons/md";
 import { FaUserLarge } from "react-icons/fa6";
 import { useForm } from 'react-hook-form';
 
-import { Column, Container, SubTitleLogin, Title, TitleLogin, Wrapper } from "./styles";
+import { Column, Container, SubTitleLogin, Title, TitleLogin, Wrapper, InfoText, AccountExists, ToLogin, Row } from "./styles";
 import { api } from '../../services/api';
 
 import Header from "../../components/Header";
@@ -70,6 +70,11 @@ function Register() {
               />
               <Button title="Criar minha conta" variant="secondary" type="submit" />
             </form>
+            <InfoText>Ao clicar em "criar minha conta grátis", declaro que aceito as Políticas de Privacidade e os Termos de Uso da DIO.</InfoText>
+            <Row>
+              <AccountExists>Já tenho conta.</AccountExists>
+              <ToLogin href="#" onClick={(navigate('/login'))}>Fazer Login</ToLogin>
+            </Row>
           </Wrapper>
         </Column>
       </Container>
