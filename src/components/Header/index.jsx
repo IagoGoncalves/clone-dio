@@ -1,9 +1,12 @@
 import React from 'react'
-import { BuscarInputContainer, Column, Container, Input, Menu, MenuRight, Row, UserPicture, Wrapper } from './styles'
+import { BuscarInputContainer, Container, Input, Menu, MenuRight, Row, UserPicture, Wrapper } from './styles'
 import Button  from '../Button'
 import logo from '../../assets/logo-dio.png'
+import { useNavigate } from 'react-router-dom'
 
 function Header({autenticado}) {
+  const navigate = useNavigate();
+
   return (
     <Wrapper>
       <Container>
@@ -25,8 +28,12 @@ function Header({autenticado}) {
         ):(  
           <>
             <MenuRight href="#"></MenuRight>
-            <Button title="Entrar" />
-            <Button title="Cadastrar"/>
+            <Button title="Entrar" onClick={() => {
+              navigate('/login');
+            }}/>
+            <Button title="Cadastrar" onClick={() => {
+              navigate('/register');
+            }}/>
           </>
         )}
         </Row>
